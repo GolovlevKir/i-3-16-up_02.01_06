@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="MenuAnimation.Sklad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenuAnimation"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid>
+        <Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.01*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.1*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.01*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="0.05*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="71*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="70*"/>
+
+                        <ColumnDefinition Width="116*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="14*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="22*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="16*"/>
+                        <RowDefinition Height="16*"/>
+                        <RowDefinition Height="17*"/>
+                        <RowDefinition Height="308*"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="" Grid.Column="3"  Grid.Row="3" Height="Auto" BorderBrush="#FF2196F3" AutomationProperties.IsRowHeader="True" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="C:\Users\diana\OneDrive\Рабочий стол\SpaceY\MenuAnimation\Assets\Plus.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="Добавить" Grid.Row="3" Height="Auto" Grid.Column="5" Margin="0.001,0,0,0" />
+                    <Button Content="Удалить" Grid.Column="7" Grid.Row="3" Height="Auto" Margin="0,0,-0.001,0" />
+                    <Button Content="Изменить" Grid.Column="9" Grid.Row="3" Height="Auto" Margin="0.001,0,-0.001,0" />
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" FontSize="19"  Grid.ColumnSpan="10" Height="37" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="420" Grid.Row="1" Grid.RowSpan="2"/>
+                    <DataGrid Grid.ColumnSpan="5" Grid.Column="5" Height="379.132" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Left" Width="253.212" Grid.RowSpan="5" Margin="0.001,0,0,0"/>
+                    <ComboBox x:Name="comboBox" Grid.Column="1" Grid.Row="3" VerticalAlignment="Stretch" Height="Auto"/>
+                    <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="16" Grid.Row="6" VerticalAlignment="Top" Width="90.601" Grid.ColumnSpan="3"/>
+                    <ComboBox Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="16.667" Margin="0.409,0.333,0,0" Grid.Row="8" VerticalAlignment="Top" Width="90.731" Grid.Column="1"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

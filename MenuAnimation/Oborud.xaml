@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="MenuAnimation.Oborud"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenuAnimation"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="371*"/>
+                <RowDefinition Height="75*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="3" Grid.RowSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="120*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="120*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="120*"/>
+                    <ColumnDefinition Width="150*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="32*"/>
+                    <RowDefinition Height="19*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="23*"/>
+                    <RowDefinition Height="189*"/>
+
+                    <RowDefinition Height="141*"/>
+                </Grid.RowDefinitions>
+                <Button Content="Добавить" Grid.Column="1" Grid.Row="3" Height="Auto" />
+                <Button Content="Удалить" Grid.Column="3" Grid.Row="3" Height="Auto" />
+                <Button Content="Изменить" Grid.Column="5" Grid.Row="3" Height="Auto" />
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" FontSize="19"  Grid.ColumnSpan="4" Height="32" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="408" Grid.Row="1"/>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="153" Grid.Column="1"   Grid.Row="5"  Margin ="3,0,0,0">
+                    <Grid Margin="0,0,-1,-1" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="38*"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="103*"/>
+                            <ColumnDefinition Width="34*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="18"/>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="152*"/>
+                            <RowDefinition Height="12*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="C:\Users\diana\OneDrive\Рабочий стол\SpaceY\MenuAnimation\Assets\MKC.PNG"  Grid.Row="3" Grid.Column="2" Margin="0,0,4,1"/>
+                        <Label Content="Снаряжение" Foreground="Black" FontSize="7" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" RenderTransformOrigin="1.959,0.536" Grid.Row="1"/>
+                        <Label Content="Дата выпуска: 21-08-2008" FontSize="7" Foreground="Black" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" Grid.Row="2"/>
+                        <Label Content="Орлан-МКС" Foreground="Black" FontSize="7" HorizontalContentAlignment="Center" Grid.Row="0" Grid.ColumnSpan="4" RenderTransformOrigin="7.105,0.507"/>
+                    </Grid>
+                </Border>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>

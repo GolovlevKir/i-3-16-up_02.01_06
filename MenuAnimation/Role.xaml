@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="MenuAnimation.Role"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenuAnimation"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.01*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="-2.453,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="173*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="173*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="161*"/>
+
+                    <ColumnDefinition Width="56*"/>
+                    <ColumnDefinition Width="83*"/>
+                    <ColumnDefinition Width="64*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="15*"/>
+                </Grid.RowDefinitions>
+
+                <Button Content="Добавить" Grid.Row="3" Height="Auto" Grid.Column="1" Margin="4,0,0,0" />
+                <Button Content="Удалить" Grid.Column="3" Grid.Row="3" Height="Auto" />
+                <Button Content="Изменить" Grid.Column="5" Grid.Row="3" Height="Auto" />
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" FontSize="19"  Grid.ColumnSpan="4" Height="44" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="400" Grid.Row="1"/>
+                <DataGrid Grid.ColumnSpan="3" Grid.Column="4" Height="297" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Left" Width="246" Grid.RowSpan="9"/>
+                <CheckBox Content="Роли" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="Black" Background="#FF008EFF" Foreground="Black"/>
+                <CheckBox Content="Профили" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Потенциальные сотрудники" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Тестирование" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="8" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Личные дела" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black" />
+                <CheckBox Content="Космическое оборудование" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Маршрутная квитанция" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="11" VerticalAlignment="Top" Height="33" Width="177" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Штатное расписание" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="11" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Склад" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Ячейки" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Маршруты" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Распределение полетов" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="8" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Комические корабли" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+                <CheckBox Content="Удастоверение и лецензии" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="33" Width="178" BorderBrush="#FF158FF0" Background="#FF1286E2" Foreground="Black"/>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
